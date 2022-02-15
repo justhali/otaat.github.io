@@ -23,4 +23,3 @@ Pour ce projet je me suis inspirée de ce tuto de [Tyler Potts : lien](https://w
 ### Technos utilisées
 
 **Angular**
-"# otaat" 
