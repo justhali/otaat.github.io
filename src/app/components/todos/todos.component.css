@@ -1,0 +1,119 @@
+.todos {
+  width: 50%;
+  margin: 130px auto;
+  position: relative;
+}
+
+/* Titles */
+h1, h2{
+  text-align: center;
+}
+h1{
+  font-size: 4rem;
+  line-height: 1.5;
+  letter-spacing: 0.4rem;
+  color: #d57a66;
+  font-weight: 600;
+  text-shadow: -3px 3px 0px #e5ac9f, -6px 6px 0px #eabdb3, -12px 12px 0px #efcdc6;
+}
+h2{
+  color: #66c1d5;
+}
+/* Form */
+form{
+  text-align: center;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  margin: 25px 0;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(240,243,189,1) 0%, rgba(242,244,197,1) 45%, rgba(244,246,206,1) 100%);
+}
+
+.todo .checkbox {
+  flex: 1 1 50px;
+  height: 20px;
+  width: 20px;
+}
+.todo .checkbox:focus{
+  background-color: green;
+}
+.todo .content {
+  flex: 1 1 100%;
+  font-weight: 600;
+  color:#995849;
+}
+
+.todo.done .content {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  width: 50%;
+  padding: 10px 15px;
+  margin: 50px 10px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.todo-submit {
+  background-color: #d57a66;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #edc79b 0 -3px 0 inset;
+  color: #ffff;
+  height: 48px;
+  font-weight: bold;
+  font-size: 1.5;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 16px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.todo-submit:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #edc79b 0 -3px 0 inset;
+}
+
+.todo-submit:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #edc79b 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.todo-submit:active {
+  box-shadow: #edc79b 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.delete{
+  border: none;
+  font-size: 1.5rem;
+  background: none;
+  margin-right: 25px;
+  color: #9f0000;
+}
+
+/* Footer */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  color: #66c1d5;
+  font-weight: bold;
+}

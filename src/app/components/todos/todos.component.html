@@ -1,0 +1,21 @@
+<div class="todos">
+  <h1>OTAAT</h1>
+  <h2>One Task At A Time</h2>
+
+  <form (submit)= "addTodo()">
+    <input type="text"
+          name="inputTodo"
+          placeholder="Acheter du pain ..."
+          class="todo-input"
+          [(ngModel)]="inputTodo">
+    <input type="submit" value="ADD" class="todo-submit">
+  </form>
+
+  <div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completed ? 'done' : '' )}}">
+    <input type="checkbox" class="checkbox" (click)="toggleDone(i)">
+    <div class="content">{{ todo.content }}</div>
+    <button class="delete" (click)="deleteTodo(i)"><i class="fas fa-trash-alt"></i></button>
+  </div>
+</div>
+
+<footer class="copyright"><a href="#">&copy; Halima Ahmed | 2022</a></footer>
