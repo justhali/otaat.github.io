@@ -10,6 +10,8 @@ export class TodosComponent implements OnInit {
 
   todos:Todo[] = [];
   inputTodo:string = "";
+  todo: any = {};
+
 
   constructor() { }
 
@@ -30,8 +32,10 @@ export class TodosComponent implements OnInit {
       content: this.inputTodo,
       completed: false
     });
+
     // Effacer la dernière valeur ajouter dans l'input
     this.inputTodo = "";
+
   }
 
   // Supprimer la tâche
