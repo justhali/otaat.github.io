@@ -115,3 +115,11 @@ footer{
   color: #66c1d5;
   font-weight: bold;
 }
+
+footer a{
+  text-decoration: none;
+  color: #66c1d5;
+}
+footer a:hover{
+  color:#995849;
+}
